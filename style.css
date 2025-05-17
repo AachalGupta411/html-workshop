@@ -1,0 +1,46 @@
+/* Base button style */
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Light blue background tone for page */
+body {
+    background-color: #e0f7fa;
+    /* Light aqua blue */
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Show button: soft teal */
+.show-btn {
+    background-color: #b2ebf2;
+    color: #004d40;
+}
+
+.show-btn:hover {
+    background-color: #4dd0e1;
+    transform: translateY(-2px);
+}
+
+/* Hide button: soft sky blue */
+.hide-btn {
+    background-color: #81d4fa;
+    color: #01579b;
+}
+
+.hide-btn:hover {
+    background-color: #4fc3f7;
+    transform: translateY(-2px);
+}
