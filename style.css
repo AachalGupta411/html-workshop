@@ -1,46 +1,38 @@
-/* Base button style */
-button {
-    padding: 12px 24px;
-    border: none;
-    border-radius: 12px;
-    font-size: 16px;
-    font-family: 'Segoe UI', sans-serif;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    margin: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Light blue background tone for page */
 body {
-    background-color: #e0f7fa;
-    /* Light aqua blue */
-    font-family: 'Segoe UI', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
     height: 100vh;
-    flex-direction: column;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-/* Show button: soft teal */
-.show-btn {
-    background-color: #b2ebf2;
-    color: #004d40;
+.wrapper {
+    text-align: center;
 }
 
-.show-btn:hover {
-    background-color: #4dd0e1;
-    transform: translateY(-2px);
+.transition-btn {
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #00ffff;
+    background: transparent;
+    border: 3px solid #00ffff;
+    border-radius: 12px;
+    cursor: pointer;
+    text-shadow: 0 0 8px #00ffff;
+    box-shadow: 0 0 12px #00ffff, inset 0 0 10px #00ffff;
+    transition: all 0.3s ease;
 }
 
-/* Hide button: soft sky blue */
-.hide-btn {
-    background-color: #81d4fa;
-    color: #01579b;
+.transition-btn:hover {
+    background-color: #00ffff;
+    color: #000;
+    text-shadow: none;
+    box-shadow: 0 0 20px #00ffff, inset 0 0 10px #000;
 }
 
-.hide-btn:hover {
-    background-color: #4fc3f7;
-    transform: translateY(-2px);
+.transition-btn:active {
+    transform: scale(0.95);
 }

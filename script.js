@@ -1,7 +1,7 @@
-function show() {
-    document.getElementById('mytext').style.display="block";
-}
-
-function hide() {
-document.getElementById('mytext').style.display="none";
-}
+document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.querySelector(".transition-btn");
+    btn.addEventListener("click", () => {
+        alert("Transition initiated!");
+        // Add more logic if needed
+    });
+});
