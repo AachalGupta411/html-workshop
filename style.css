@@ -1,38 +1,75 @@
+/* General body setup */
 body {
-    margin: 0;
-    height: 100vh;
-    background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #e0f7fa;
     font-family: 'Segoe UI', sans-serif;
-}
-
-.wrapper {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Stopwatch container */
+  .stopwatch-container {
+    background: #ffffffcc;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     text-align: center;
-}
-
-.transition-btn {
-    padding: 20px 40px;
-    font-size: 20px;
+  }
+  
+  /* Time display */
+  #display {
+    font-size: 48px;
     font-weight: bold;
-    color: #00ffff;
-    background: transparent;
-    border: 3px solid #00ffff;
+    color: #00796b;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 12px 24px;
+    margin: 5px;
+    border: none;
     border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
     cursor: pointer;
-    text-shadow: 0 0 8px #00ffff;
-    box-shadow: 0 0 12px #00ffff, inset 0 0 10px #00ffff;
     transition: all 0.3s ease;
-}
-
-.transition-btn:hover {
-    background-color: #00ffff;
-    color: #000;
-    text-shadow: none;
-    box-shadow: 0 0 20px #00ffff, inset 0 0 10px #000;
-}
-
-.transition-btn:active {
-    transform: scale(0.95);
-}
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Start button */
+  .start {
+    background-color: #aed581;
+    color: #33691e;
+  }
+  
+  .start:hover {
+    background-color: #9ccc65;
+  }
+  
+  /* Stop button */
+  .stop {
+    background-color: #ff8a65;
+    color: #bf360c;
+  }
+  
+  .stop:hover {
+    background-color: #ff7043;
+  }
+  
+  /* Reset button */
+  .reset {
+    background-color: #4fc3f7;
+    color: #01579b;
+  }
+  
+  .reset:hover {
+    background-color: #29b6f6;
+  }
+  
